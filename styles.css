@@ -218,16 +218,6 @@ nav ul li a:hover {
 
 /* Media query for mobile */
 @media (max-width: 768px) {
-
-
-
-
-
-
-
-
-
-
   
   /* Hide regular menu on mobile */
   header ul {
@@ -263,6 +253,8 @@ nav ul li a:hover {
     left: 0;
     transition: none; }
 
+
+    /* imp for burger 3 lines */
     .burger-menu .burger:before {
       top: -6px;  /* Position the top line closer to the middle line */
   }
@@ -270,6 +262,7 @@ nav ul li a:hover {
   .burger-menu .burger:after {
       bottom: -6px; /* Position the bottom line closer to the middle line */
   }
+
 
   
 }
