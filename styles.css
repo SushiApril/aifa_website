@@ -218,6 +218,17 @@ nav ul li a:hover {
 
 /* Media query for mobile */
 @media (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+  
   /* Hide regular menu on mobile */
   header ul {
       display: none;
@@ -225,7 +236,13 @@ nav ul li a:hover {
 
   /* Show burger menu on mobile */
   .burger-menu {
-      display: block;
+    position: absolute; /* Position the burger menu absolutely */
+    right: 20px; /* Align it to the right side */
+    top: 15px; /* Vertically center the burger icon */
+    transform: translateY(-50%); /* Adjust to perfectly center it */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+
+
   }
 
   /* Burger icon styles */
@@ -233,20 +250,26 @@ nav ul li a:hover {
       width: 30px;
       height: 3px;
       background-color: white;
-      margin: 6px 0;
+      margin: 1px 0;
       transition: transform 0.3s ease-in-out;
   }
 
-  /* Rotate burger icon on click */
-  .burger-menu.active .burger {
-      transform: rotate(45deg);
+  .burger-menu .burger:before, .burger-menu .burger:after {
+    content: '';
+    width: 30px;  /* Match the width of the main burger line */
+    height: 3px;  /* Match the height of the main burger line */
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: none; }
+
+    .burger-menu .burger:before {
+      top: -6px;  /* Position the top line closer to the middle line */
+  }
+  
+  .burger-menu .burger:after {
+      bottom: -6px; /* Position the bottom line closer to the middle line */
   }
 
-  .burger-menu.active .burger:before {
-      transform: translateY(8px) rotate(-45deg);
-  }
-
-  .burger-menu.active .burger:after {
-      transform: translateY(-8px) rotate(45deg);
-  }
+  
 }
