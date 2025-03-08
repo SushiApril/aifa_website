@@ -11,6 +11,10 @@ body {
     color: #333;
 }
 
+.mobile-header {
+  display: none;
+}
+
 header {
     background-color: #5CA26F;
     color: white;
@@ -216,53 +220,80 @@ nav ul li a:hover {
 
   
 
-/* Media query for mobile */
+/* Mobile Header - Show only on Mobile */
 @media (max-width: 768px) {
-  
-  /* Hide regular menu on mobile */
-  header ul {
-      display: none;
+  .desktop-header {
+      display: none; /* Hide desktop header on mobile */
   }
 
-  /* Show burger menu on mobile */
+  .mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #5CA26F;
+      padding: 15px 20px;
+      position: relative;
+  }
+
   .burger-menu {
     position: absolute; /* Position the burger menu absolutely */
     right: 20px; /* Align it to the right side */
     top: 15px; /* Vertically center the burger icon */
     transform: translateY(-50%); /* Adjust to perfectly center it */
     cursor: pointer; /* Change cursor to pointer for better UX */
-
-
   }
 
-  /* Burger icon styles */
+
   .burger {
-      width: 30px;
-      height: 3px;
-      background-color: white;
-      margin: 1px 0;
-      transition: transform 0.3s ease-in-out;
-  }
-
-  .burger-menu .burger:before, .burger-menu .burger:after {
-    content: '';
-    width: 30px;  /* Match the width of the main burger line */
-    height: 3px;  /* Match the height of the main burger line */
+    width: 30px;
+    height: 3px;
     background-color: white;
-    position: absolute;
-    left: 0;
-    transition: none; }
+    margin: 1px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.burger-menu .burger:before, .burger-menu .burger:after {
+  content: '';
+  width: 30px;  /* Match the width of the main burger line */
+  height: 3px;  /* Match the height of the main burger line */
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: none; }
 
 
-    /* imp for burger 3 lines */
-    .burger-menu .burger:before {
-      top: -6px;  /* Position the top line closer to the middle line */
+  /* imp for burger 3 lines */
+  .burger-menu .burger:before {
+    top: -6px;  /* Position the top line closer to the middle line */
+}
+
+.burger-menu .burger:after {
+    bottom: -6px; /* Position the bottom line closer to the middle line */
+}
+  .mobile-menu {
+      display: none; /* Hide by default */
+      list-style: none;
+      padding: 0;
+      background-color: #5CA26F;
+      width: 100%;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      z-index: 100;
   }
-  
-  .burger-menu .burger:after {
-      bottom: -6px; /* Position the bottom line closer to the middle line */
+
+  .mobile-menu li {
+      padding: 10px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
+  .pillars-title {
+      font-weight: bold;
+      color: white;
+      padding: 10px 20px;
+  }
 
-  
+  .pillars-item {
+      margin-left: 50px; /* Indent dropdown items */
+  }
 }
