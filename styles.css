@@ -307,3 +307,47 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+
+/* Footer container to arrange sections side by side */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Styling for each footer section */
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Styling for social media links */
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media li {
+  margin: 10px 0;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+/* Footer bottom text */
+footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+}
