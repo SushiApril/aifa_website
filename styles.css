@@ -297,3 +297,13 @@ nav ul li a:hover {
       margin-left: 50px; /* Indent dropdown items */
   }
 }
+
+footer {
+  background-color: #257D8E;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
