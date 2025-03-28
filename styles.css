@@ -217,6 +217,10 @@ nav ul li a:hover {
     font-size: 0.95rem;
     line-height: 1.4;
   }
+  .pillar a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from the parent */
+}
 
   
 
@@ -300,7 +304,7 @@ nav ul li a:hover {
 
 footer {
   background-color: #257D8E;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 20px 0;
   position: relative;
@@ -315,13 +319,13 @@ footer {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 /* Styling for each footer section */
 .footer-section {
   flex: 1;
-  padding: 10px;
+  padding: 5px;
 }
 
 /* Styling for social media links */
@@ -335,7 +339,7 @@ footer {
 }
 
 .social-media a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
@@ -349,5 +353,5 @@ footer {
 footer p {
   margin-top: 20px;
   font-size: 14px;
-  color: white;
+  color: rgb(6, 6, 6);
 }
