@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,130 +11,76 @@
      <!-- To DO! 
       1. Add instagram, discord, linkedin icon with link
       -->
-    <header>
+    <header class = "desktop-header">
         <nav>
             <div class="logo"></div>
-            <ul>
-                <li><a href="about_us.html">About Us</a></li>
+            <div class="burger-menu">
+                <div class="burger"></div>
+                </div>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="#pillars">Our Pillars</a>
                     <ul class="dropdown-content">
-                        <li><a href="pillars/aie.html">AI Explorers</a></li>
-                        <li><a href="pillars/boe.html">Build on AI</a></li>
-                        <li><a href="pillars/aid.html">AI Digest</a></li>
-                        <li><a href="pillars/omni.html">Omni AI</a></li>
+                        <li><a href="aie.html">AI Explorers</a></li>
+                        <li><a href="boe.html">Build on AI</a></li>
+                        <li><a href="aid.html">AI Digest</a></li>
+                        <li><a href="omni.html">Omni AI</a></li>
                     </ul>
                 </li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#apply">Apply</a></li>
             </ul>
+                
         </nav>
-        
     </header>
 
-<body>
-    <style>
-        ul {
-            list-style-type: disc; /* Ensures bullet points are displayed */
-            margin-left: 20px; /* Adds indentation for the list */
-        }
-        li {
-            margin-bottom: 10px; /* Adds spacing between list items */
-        }
-    </style>
+<header class = "mobile-header" > 
 
-    <h1>AI Explorers Committee</h1>
-    <p><strong>Empowering Students Across All Majors to Discover the World of AI</strong></p>
+    <nav>
+        <div class="burger-menu">
+            <div class="burger"></div>
+        </div> <!-- Unicode for hamburger icon -->
+        <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="pillars-title">Our Pillars</li>
+            <li class="pillars-item"><a href="aie.html">AI Explorers</a></li>
+            <li class="pillars-item"><a href="boe.html">Build on AI</a></li>
+            <li class="pillars-item"><a href="aid.html">AI Digest</a></li>
+            <li class="pillars-item"><a href="omni.html">Omni AI</a></li>
+        </ul>
+    </nav>
 
-    <h2>Mission</h2>
-    <p>The AI Explorers Committee is dedicated to introducing Artificial Intelligence to students of all majors, with a special focus on Non-ICS students. Our mission is to make AI accessible, inclusive, and engaging for everyone—whether you are studying business, biology, art, or engineering.</p>
-    <ul>
-        <li>Demystify AI by providing foundational knowledge through hands-on workshops and specialized events.</li>
-        <li>Help students understand AI applications in their respective fields of study.</li>
-        <li>Foster a welcoming environment for curiosity-driven exploration and collaboration.</li>
-        <li>Equip participants with practical skills that make them AI-ready for any industry.</li>
-    </ul>
+    
+</header>
 
-    <h2>Why Join AI Explorers?</h2>
-    <ul>
-        <li><strong>Explore AI Basics:</strong> Learn about computing, machine learning, and AI concepts in a beginner-friendly manner.</li>
-        <li><strong>Specialized Learning:</strong> Discover how AI is applied in fields like business, healthcare, economics, social sciences, and more.</li>
-        <li><strong>Practical Coding:</strong> Gain hands-on experience with easy-to-follow coding workshops.</li>
-        <li><strong>Collaborative Events:</strong> Participate in specialized events and projects tailored to students’ interests.</li>
-        <li><strong>Problem-Solving Skills:</strong> Learn to apply AI concepts to solve tasks relevant to your area of study.</li>
-    </ul>
 
-    <h2>Workshops & Specialized Events</h2>
-    <h3>Workshops Include:</h3>
-    <ul>
-        <li><strong>AI Fundamentals:</strong> Basics of AI, machine learning, and its real-world applications.</li>
-        <li><strong>Coding for AI Beginners:</strong> Learn Python and simple AI tools, no coding experience needed.</li>
-        <li><strong>Field-Specific AI Applications:</strong> Discover AI’s role in business analytics, healthcare predictions, art generation, and more.</li>
-        <li><strong>Project-Based Learning:</strong> Hands-on tasks that help you understand AI concepts through interactive challenges.</li>
-        <li><strong>Team Collaboration:</strong> Work with peers to brainstorm and solve problems using AI tools.</li>
-    </ul>
-    <h3>Specialized Events:</h3>
-    <ul>
-        <li>Focused on exploring AI topics within specific fields based on the majority interest of participants.</li>
-        <li>Learn directly from speakers, professors, and industry professionals who specialize in AI.</li>
-        <li>Events highlighting innovative AI solutions being used in various industries.</li>
-    </ul>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <h2>Roles of AI Explorers Committee Members</h2>
-    <h3>Key Positions and Responsibilities:</h3>
-    <ul>
-        <li><strong>Workshop Leads:</strong>
-            <ul>
-                <li>Organize and conduct AI workshops for beginners and intermediate learners.</li>
-                <li>Find interesting AI topics to focus on, tailoring sessions to various fields.</li>
-                <li>Provide coding support and help attendees during hands-on activities.</li>
-                <li>Collaborate with committee members to plan and deliver impactful sessions.</li>
-            </ul>
-        </li>
-        <li><strong>Content & Curriculum Developers:</strong>
-            <ul>
-                <li>Develop workshop materials, beginner-friendly coding tasks, and AI-related resources.</li>
-                <li>Curate content that highlights AI’s relevance across different industries.</li>
-                <li>Assist in designing projects and interactive challenges.</li>
-            </ul>
-        </li>
-    </ul>
+    <!-- Your custom JavaScript file -->
+    <script src="../script.js"></script>
 
-    <h2>For Participants (Non-ICS Students)</h2>
-    <ul>
-        <li><strong>Build Confidence:</strong> Learn AI basics in a supportive, non-competitive environment.</li>
-        <li><strong>Apply AI Concepts:</strong> Discover how AI can be used in your field of interest.</li>
-        <li><strong>Develop Coding Skills:</strong> Participate in simple, hands-on coding sessions tailored for beginners.</li>
-        <li><strong>Solve Real-World Problems:</strong> Work on small projects and challenges that teach you how to apply AI tools.</li>
-        <li><strong>Explore Future Careers:</strong> Learn how AI is shaping industries and opening up new career paths.</li>
-    </ul>
 
-    <h2>Significance of AI Explorers</h2>
-    <p>AI Explorers stands out because it brings AI to everyone, regardless of their background. We focus on helping students see AI not as a technical challenge but as an exciting opportunity to enhance their field of study.</p>
-    <ul>
-        <li>For <strong>business students</strong>: Understanding predictive analytics and data-driven decision-making.</li>
-        <li>For <strong>biology majors</strong>: Exploring AI-driven research tools for gene analysis and drug discovery.</li>
-        <li>For <strong>artists</strong>: Learning generative AI techniques to create unique art or interactive media.</li>
-        <li>For <strong>psychology students</strong>: Analyzing behavioral data or creating mental health tools.</li>
-        <li>For <strong>engineering majors</strong>: Applying AI to optimize systems, robotics, or smart technologies.</li>
-        <li>For <strong>economics students</strong>: Building financial models, forecasting trends, and analyzing markets.</li>
-        <li>For <strong>healthcare students</strong>: AI’s role in diagnostics, medical imaging, and patient care predictions.</li>
-        <li>For <strong>environmental science students</strong>: Leveraging AI to predict climate changes or improve resource management.</li>
-    </ul>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Us Section -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: aifa@uci.edu</p>
+                <p>Join our Discord server for more information</p>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-section social-media">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://discord.gg/BztXVT9gwM" target="_blank">Discord</a></li>
+                    <li><a href="https://www.instagram.com/aifa_uci/" target="_blank">Instagram</a></li>
+                    <!--  <li><a href="https://linkedin.com/company/yourcompany" target="_blank">LinkedIn</a></li> --> 
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2025 AI For All. All rights reserved.</p>
+    </footer>
 
-    <h2>Get Involved</h2>
-    <ul>
-        <li><strong>Participants:</strong> Attend workshops and events to gain knowledge and skills.</li>
-        <li><strong>Committee Members:</strong> Take on leadership roles to help organize and run workshops.</li>
-        <li><strong>Interns:</strong> Assist in event logistics, coding support, and participant engagement.</li>
-    </ul>
-
-    <div class="cta">
-        <h2>📌 Join AI Explorers Today</h2>
-        <p>Take your first step toward understanding AI and its limitless applications. Together, we’ll explore how AI is shaping the future—and how you can be part of it.</p>
-        <p><strong>🚀 AI is for Everyone. Let’s Explore It Together!</strong></p>
-    </div>
 </body>
-
-<!--navbar stuff-->
+</html>

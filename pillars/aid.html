@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,121 +11,76 @@
      <!-- To DO! 
       1. Add instagram, discord, linkedin icon with link
       -->
-    <header>
+    <header class = "desktop-header">
         <nav>
             <div class="logo"></div>
-            <ul>
-                <li><a href="about_us.html">About Us</a></li>
+            <div class="burger-menu">
+                <div class="burger"></div>
+                </div>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="#pillars">Our Pillars</a>
                     <ul class="dropdown-content">
-                        <li><a href="pillars/aie.html">AI Explorers</a></li>
-                        <li><a href="pillars/boe.html">Build on AI</a></li>
-                        <li><a href="pillars/aid.html">AI Digest</a></li>
-                        <li><a href="pillars/omni.html">Omni AI</a></li>
+                        <li><a href="aie.html">AI Explorers</a></li>
+                        <li><a href="boe.html">Build on AI</a></li>
+                        <li><a href="aid.html">AI Digest</a></li>
+                        <li><a href="omni.html">Omni AI</a></li>
                     </ul>
                 </li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#apply">Apply</a></li>
             </ul>
+                
         </nav>
-        
     </header>
 
-    <style>
-        ul {
-            list-style-type: disc; /* Ensures bullet points are displayed */
-            margin-left: 20px; /* Adds indentation for the list */
-        }
-        li {
-            margin-bottom: 10px; /* Adds spacing between list items */
-        }
-    </style>
-    <h3> Our Mission</h3>
-    <p>AI Digest at UCI aims to be the leading platform for showcasing Artificial Intelligence advancements, knowledge, and contributions within and beyond UCI. Our mission is to inform, inspire, and connect students, faculty, and alumni through meaningful AI-related content, creating a bridge between research, real-world applications, and innovative minds across all disciplines.</p>
-    <h3> What is AI Digest</h3>
-    <p> AI Digest is a student-driven publication dedicated to: </p>  
-     <ul>
-        <li><strong>Bringing AI to Everyone:</strong> Breaking down complex AI concepts into digestible insights for students from all majors.</li>
-        <li><strong>Showcasing Research:</strong> Highlighting impactful AI research conducted by UCI faculty, students, and alumni.</li>
-        <li><strong>Exploring Global AI Trends:</strong> Sharing cutting-edge innovations, breakthroughs, and use cases from around the world.</li>
-        <li><strong>Engaging Perspectives:</strong> Featuring interviews with AI experts, professors, students, and alumni to inspire and inform.</li>
-        <li><strong>Spotlighting Student Success:</strong> Showcasing student AI projects, contributions, and achievements to encourage peer learning.</li>
-        <li><strong>Building Community:</strong> Promoting AI-related campus events, workshops, and initiatives to strengthen the UCI AI community.</li>
-    </ul>
+<header class = "mobile-header" > 
 
-    <h3>Why AI Digest Matters</h1>
-    <ul>
-        <li><strong>Inspiration:</strong> It introduces AI’s vast potential across all fields, from healthcare to art, ensuring students realize its relevance to their careers.</li>
-        <li><strong>Accessibility:</strong> AI Digest makes AI approachable and exciting for non-technical and technical majors alike.</li>
-        <li><strong>Empowerment:</strong> By featuring UCI research, student projects, and real-world AI examples, AI Digest encourages students to contribute to the AI space.</li>
-        <li><strong>Networking:</strong> Through interviews, spotlights, and global insights, AI Digest connects students to professionals, professors, and peers in AI.</li>
-        <li><strong>Skill Development:</strong> Students involved in AI Digest gain valuable skills in writing, design, research, and media coordination while contributing to the community.</li>
-    </ul>
+    <nav>
+        <div class="burger-menu">
+            <div class="burger"></div>
+        </div> <!-- Unicode for hamburger icon -->
+        <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="pillars-title">Our Pillars</li>
+            <li class="pillars-item"><a href="aie.html">AI Explorers</a></li>
+            <li class="pillars-item"><a href="boe.html">Build on AI</a></li>
+            <li class="pillars-item"><a href="aid.html">AI Digest</a></li>
+            <li class="pillars-item"><a href="omni.html">Omni AI</a></li>
+        </ul>
+    </nav>
 
-    <h1>Sections of AI Digest</h1>
-    <style>
-        ol {
-            list-style-type: decimal; /* Ensures numbers are displayed */
-            margin-left: 20px; /* Indents the list */
-        }
-        li {
-            margin-bottom: 10px; /* Adds space between items */
-        }
-    </style>
-
-    <ol>
-        <li><strong>UCI AI Research Spotlight:</strong> Features cutting-edge AI research conducted by UCI professors, research teams, and students.</li>
-        <li><strong>Global Innovations:</strong> Covers AI advancements, tools, and applications from around the world.</li>
-        <li><strong>AI Perspectives:</strong> Exclusive interviews and opinion pieces from AI experts, faculty, students, and alumni.</li>
-        <li><strong>Student Success Stories:</strong> Highlights UCI student contributions, AI projects, and competitions.</li>
-        <li><strong>Campus AI Events:</strong> Promotes upcoming workshops, seminars, webinars, and hackathons at UCI.</li>
-        <li><strong>AI in Fields:</strong> Explores how AI is applied across diverse fields like biology, business, art, healthcare, psychology, and more.</li>
-        <li><strong>Tech Tools & Trends:</strong> Features the latest AI tools, frameworks, and trends to help students stay updated.</li>
-        <li><strong>Creative AI Corner:</strong> A space for students to share AI-inspired art, creative projects, and visualizations.</li>
-    </ol>
-
-
-    <h3> Our Team Structure</h3>
-    <p><strong> Leadership: </strong></p>
-    <ul>
-        <li> Digest Chair/Director: Oversees the entire operation, ensuring seamless collaboration and content delivery.
-        </li></ul>
-
-    <p> <strong> Editorial Team </strong> </p>  
-    <ul> 
-        <li>Editors:  Refine, edit, and manage written content to ensure high-quality publications.        </li>
-        <li>Writers/Content Interns: Research, draft, and create engaging articles on AI topics, research, and events.</li>
-        <li>Organize and conduct interviews with faculty, alumni, and industry leaders.        </li>
-    </ul>
     
-    <p> <strong> Design & Media Team </strong> </p>
-    <ul>
-        <li>Design/Graphics Interns: Develop visually appealing layouts, infographics, and media for articles and promotions.
-        <li> Social Media Coordinators: Manage social platforms, promote AI Digest content, and expand readership.</li>
-        <li>Photographers & Videographers: Capture moments from campus events, interviews, and workshops to enhance content.
-        </li>
-    </ul>
+</header>
 
-    <p><strong> Research & Outreach Team: </strong></p>
 
-    <ul>
-        <li>Research Contributors: Curate and highlight UCI faculty research, student projects, and innovations. </li>
-            <li>Outreach Coordinators: Connect with AI-related campus organizations, faculty, and departments for collaboration.</li>
-    </ul>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <h3>Get Involved – Become a Part of AI Digest</h3>
+    <!-- Your custom JavaScript file -->
+    <script src="../script.js"></script>
 
-<p>AI Digest offers an incredible opportunity for students to: </p>
-<ul>
-<li>Collaborate with like-minded peers who are passionate about AI.</li>
-<li>Contribute to a professional and recognized publication at UCI.</li>
-<li>Learn practical skills in writing, graphic design, media coordination, and research.</li>
-<li>Build connections with professors, alumni, and AI industry professionals.</li>
-<li>Showcase your creativity and contributions to the UCI community.</li>
-</ul>
 
-<p><strong>the Team</strong> </p>
-<p> We welcome students of all majors who are curious about AI and want to contribute to making knowledge accessible to everyone. No prior experience is needed—just creativity, curiosity, and a willingness to learn! </p>
-🚀 Stay Curious. Stay Creative. Be a Part of AI Digest at UCI! 🚀
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Us Section -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: aifa@uci.edu</p>
+                <p>Join our Discord server for more information</p>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-section social-media">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://discord.gg/BztXVT9gwM" target="_blank">Discord</a></li>
+                    <li><a href="https://www.instagram.com/aifa_uci/" target="_blank">Instagram</a></li>
+                    <!--  <li><a href="https://linkedin.com/company/yourcompany" target="_blank">LinkedIn</a></li> --> 
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2025 AI For All. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
