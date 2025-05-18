@@ -28,7 +28,11 @@ header .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+.logo img {
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+  }
 header ul {
     list-style: none;
     display: flex;
