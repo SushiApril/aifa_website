@@ -68,13 +68,13 @@ header ul li a {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: black;}
+.dropdown-content a:hover {background-color: rgb(0, 147, 27);}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover {background-color: #653636;} /* CHANGES HOVER COLOR ON OUR PILLARS*/
+.dropdown:hover {background-color: transparent;} /* Removes hover color change on Our Pillars */
 
 
 
