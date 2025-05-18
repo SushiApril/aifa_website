@@ -8,13 +8,14 @@
 </head>
 <body>
     <!-- Navbar -->
-     <!-- To DO! 
-      1. Add instagram, discord, linkedin icon with link
-      -->
-      <header>
+    <header class="desktop-header">
         <nav>
             <div class="logo"></div>
-            <ul>
+            <div class="burger-menu">
+                <div class="burger"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li class="dropdown">
                     <a href="#pillars">Our Pillars</a>
@@ -25,74 +26,133 @@
                         <li><a href="pillars/omni.html">Omni AI</a></li>
                     </ul>
                 </li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#apply">Apply</a></li>
             </ul>
         </nav>
-        
     </header>
 
-    <h2> Our Mission</h2>
-    <p>The mission of "AI For All" is to diversify and educate beginners in the field of AI...</p>
+    <header class="mobile-header">
+        <nav>
+            <div class="burger-menu">
+                <div class="burger"></div>
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li class="pillars-title">Our Pillars</li>
+                <li class="pillars-item"><a href="pillars/aie.html">AI Explorers</a></li>
+                <li class="pillars-item"><a href="pillars/boe.html">Build on AI</a></li>
+                <li class="pillars-item"><a href="pillars/aid.html">AI Digest</a></li>
+                <li class="pillars-item"><a href="pillars/omni.html">Omni AI</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 
-    <div class="leadership-container">
-        <h1>Meet the Leadership</h1>
-        <div class="row">
-            <div class="profile">
-                <img src="images/img.jpg" alt="Leader 1">
-                <p>President</p>
-                <p> name </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <section class="hero-content">
+            <h1>AI FOR ALL Club</h1>
+            <p>Breaking barriers and providing access to AI knowledge<br>for students from diverse academic backgrounds</p>
+        </section>
+    </section>
 
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>AI FOR ALL is a student-led organization at UCI dedicated to introducing, educating, and empowering students of all majors to explore the world of Artificial Intelligence. Our mission is to break barriers and provide access to AI knowledge for students from diverse academic backgrounds—whether technical or non-technical. Through interactive workshops, events, mentorship programs, and publications, we aim to show that AI is not just a field for ICS students but a tool that has applications across every industry.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2>What is AI FOR ALL?</h2>
+            <p class="section-intro">AI FOR ALL is designed to make AI education accessible, practical, and exciting for all students at UCI. We believe that every major, from business to biology, and from psychology to the arts, can benefit from AI. Our club fosters a collaborative environment where students gain foundational AI knowledge, build real-world skills, and explore innovative AI applications in their areas of interest.</p>
+        </div>
+    </section>
+
+    <!-- Committees Section -->
+    <section class="committees-section">
+        <div class="container">
+            <h2>Key Committees and Programs</h2>
+            
+            <div class="committee-cards">
+                <div class="committee-card">
+                    <h3>1. Build on AI Committee</h3>
+                    <p class="committee-focus">Focus: Mentorship and AI Projects for ICS Freshmen/Minors</p>
+                    <ul>
+                        <li>Designed to help ICS freshmen dive into AI through hands-on projects.</li>
+                        <li>Mentees collaborate with peers and receive guidance from experienced ICS mentors.</li>
+                        <li>Students learn AI fundamentals, participate in workshops, and showcase their projects in spring.</li>
+                    </ul>
+                </div>
+
+                <div class="committee-card">
+                    <h3>2. AI Explorers Committee</h3>
+                    <p class="committee-focus">Focus: Interactive Workshops and Events for Non-ICS Majors</p>
+                    <ul>
+                        <li>Designed primarily for non-ICS majors to introduce AI basics and its applications.</li>
+                        <li>Regular workshops focus on beginner-friendly coding, real-world AI use cases, and interdisciplinary AI applications.</li>
+                        <li>Specialized events tailored to specific fields (e.g., healthcare, marketing, and arts) help students see AI's relevance in their industries.</li>
+                    </ul>
+                </div>
+
+                <div class="committee-card">
+                    <h3>3. AI Digest</h3>
+                    <p class="committee-focus">Focus: Research and Publication</p>
+                    <ul>
+                        <li>AI Digest provides valuable insights into AI at UCI and beyond.</li>
+                        <li>Content includes:
+                            <ul>
+                                <li>AI-related research and publications at UCI.</li>
+                                <li>Professor interviews and student/alumni contributions to the field of AI.</li>
+                                <li>Campus involvement and global innovations in AI.</li>
+                            </ul>
+                        </li>
+                        <li>The Digest keeps students informed, inspired, and connected to the world of AI.</li>
+                    </ul>
+                </div>
+
+                <div class="committee-card">
+                    <h3>4. OMNI AI Committee</h3>
+                    <p class="committee-focus">Focus: AI Workshops for Everyone</p>
+                    <ul>
+                        <li>OMNI AI offers simplified, hands-on workshops for students of all levels.</li>
+                        <li>Workshops cover topics like AI basics, beginner coding, and real-world applications across fields.</li>
+                        <li>Participants build mini-projects, engage in interactive sessions, and apply AI knowledge to solve challenges in creative ways.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="profile">
-                <img src="images/img.jpg" alt="Leader 2">
-                <p>Vice President</p>
-                <p> name </p>
-            </div>
-            <div class="profile">
-                <img src="images/img.jpg" alt="Leader 3">
-                <p>Webmaster</p>
-                <p> Sushant Gupta </p>
-            </div>
-            <div class="profile">
-                <img src="images/img.jpg" alt="Leader 4">
-                <p>Leader 4</p>
-                <p> name </p>
-            </div>
-            <div class="profile">
-                <img src="images/img.jpg" alt="Leader 5">
-                <p>Leader 5</p>
-                <p> name </p>
+
+            <div class="join-message">
+                <p>🚀 AI is the future, and AI FOR ALL ensures no one is left behind. Join us today to learn, explore, and thrive in the world of AI! 🚀</p>
             </div>
         </div>
-        <div class="row">
-            <div class="profile">
-                <img src="images/img.jpg" alt="Leader 6">
-                <p>Leader 6</p>
-                <p> name </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Us Section -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: aifa@uci.edu</p>
+                <p>Join our Discord server for more information</p>
             </div>
-            <div class="profile">
-                <img src="images/img.jpg" alt="Leader 7">
-                <p>Leader 7</p>
-                <p> name </p>
-            </div>
-            <div class="profile">
-                <img src="images/img.jpg" alt="Leader 8">
-                <p>Leader 8</p>
-                <p> name </p>
-            </div>
-            <div class="profile">
-                <img src="images/img.jpg" alt="Leader 9">
-                <p>Leader 9</p>
-                <p> name </p>
-            </div>
-            <div class="profile">
-                <img src="images/img.jpg" alt="Leader 10">
-                <p>Leader 10</p>
-                <p> name </p>
+    
+            <!-- Social Media Section -->
+            <div class="footer-section social-media">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://discord.gg/BztXVT9gwM" target="_blank">Discord</a></li>
+                    <li><a href="https://www.instagram.com/aifa_uci/" target="_blank">Instagram</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+        <p>&copy; 2025 AI For All. All rights reserved.</p>
+    </footer>
 </body>
+</html>
